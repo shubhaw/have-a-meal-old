@@ -1,0 +1,25 @@
+.Cart {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+
+.totalPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .Cart {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .Cart {
+        width: 30%;
+    }
+}
