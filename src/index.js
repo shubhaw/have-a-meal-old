@@ -4,13 +4,19 @@ import './index.css';
 import App from './App';
 
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
 
 import * as serviceWorker from './serviceWorker';
-import checkoutReducer from './store/reducers/checkout';
+import checkoutReducer from './store/reducers/checkoutReducer';
+import availableItemsReducer from './store/reducers/availableItemReducer';
+
+const rootReducer = combineReducers({
+    checkout: checkoutReducer,
+    availableItems: availableItemsReducer
+});
 
 const store = createStore(
-    checkoutReducer,
+    rootReducer,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   );
 

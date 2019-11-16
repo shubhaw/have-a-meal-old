@@ -66,7 +66,7 @@ const MealCard = function (props) {
 
 const mapStateToProps = state => {
     return {
-        items: state.items
+        items: state.checkout.items
     }
 }
 

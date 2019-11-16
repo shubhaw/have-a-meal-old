@@ -12,7 +12,7 @@ const Cart = props => {
             <Typography variant="h5">Cart</Typography>
             {
                 props.items.map(item => (
-                    <ItemRow {...item} key={item.id} />
+                    <ItemRow {...item} key={item.itemname} />
                 ))
             }
             <div className={styleClasses.totalPrice}>
@@ -30,8 +30,8 @@ const Cart = props => {
 
 const mapStateToProps = state => {
     return {
-        items: state.items,
-        totalPrice: state.totalPrice
+        items: state.checkout.items,
+        totalPrice: state.checkout.totalPrice
     }
 }
 
