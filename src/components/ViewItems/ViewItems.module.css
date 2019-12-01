@@ -1,0 +1,29 @@
+.ViewItems {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 500px) {
+    .ViewItems {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .ViewItems {
+        flex-direction: column;
+        margin-top: -10px;
+        width: 58%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .ViewItems {
+        flex-direction: row;
+        margin-top: -10px;
+        width: 68%;
+    }
+}

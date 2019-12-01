@@ -1,0 +1,13 @@
+.Layout {
+    margin: 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+    .Layout {
+        margin: 10%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
